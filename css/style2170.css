@@ -4,12 +4,89 @@ body {
   background-color: #61122f;
   font-family: 'Oxygen', sans-serif;
 }
-h1{
-  color: #00000;
-  font-size: 59px;
-  font-weight: bold;
- font-family: 'Orbitron', sans-serif;
+
+/* the header part*/
+#topbar{
+	width:75%;
+	margin-left: 30px ;
+    margin-right: auto ;
 }
+
+/* the header1  part about tag*/
+header1 {
+  background: #d9c2ac;
+  position: relative;
+}
+
+/* the list style*/
+nav ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav li {
+  position: relative;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: verdana;
+}
+
+nav a:hover {}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: #444;
+  transition: all ease-in-out 500ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+}
+
+.logo {
+	float:left;
+	font-size:40px;
+	padding-left:30px;
+	padding-top:20px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight:bold;
+}
+header {
+	font-size: 20px;
+	background-color: #f6b319;
+	color: #cccccc;
+	height: 100px;
+}
+/*end of header part */
+
+
+.container1{
+ background-color:#d9c2ac;
+}
+
+
 .first-div{
    display: block;
   margin-left: auto;
@@ -151,3 +228,8 @@ img {vertical-align: middle;}
 #testimonials {
   font-style: italic;
 }
+#hrt{
+font-size:300%;
+color:red;
+}
+
